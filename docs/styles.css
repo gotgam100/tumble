@@ -226,3 +226,17 @@ section:first-child > h2.group {
   margin-top: 0;
   color: rgba(255, 255, 255, 0.75);
 }
+
+.lead {
+  margin: -4px 4px 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+/* 랜딩: 제목·설명이 다크 그린 띠 위에 오고, 첫 카드가 띠에 살짝 걸친다 */
+.hero:not(.small) { padding-bottom: 120px; }
+.hero:not(.small) + .wrap { margin-top: -96px; }
+.hero:not(.small) + .wrap section:first-child > h2.group {
+  color: #ffffff;
+  font-size: 20px;
+}
